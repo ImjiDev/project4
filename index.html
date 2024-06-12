@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Facebook Clone - Ramos</title>
+
+        <style>
+            body{
+                margin: 0;
+            }
+
+            .head{
+                background-color: #F0F2F5;
+                width: 2020px;
+                height: 720px;
+            }
+
+            .facebooklogo{
+                width: 320.94px;
+                height: 106px;
+                position: relative;
+                right: 30px;
+            }
+
+            .fb-qoute{
+                margin: 0px;
+                font-size: 28px;
+                color: #1C1E21;
+                font-family: Helvetica, Arial, sans-serif;
+                font-weight: normal;
+            }
+
+            .container{
+                height: 349.83px;
+                width: 396px;
+                box-shadow: 1px 1px 10px 0.1px rgb(0, 0, 0,0.1), -1px -1px 10px 0.1px rgb(0, 0, 0,0.1);
+                border-radius: 8px;
+                background-color: white;
+            }
+
+            .loginform{
+                text-align: center;
+            }
+
+            .email{
+                box-sizing: border-box;
+                border-color: rgb(0, 0, 0, 0.2);
+                border-radius: 5px;
+                border-width: 1px;
+                padding: 15px;
+                font-size: 16px;
+                margin-top: 15px;
+                width: 367px;
+            }
+
+            .email:focus{
+                border-color: #1877F2;
+                outline: none;
+            }
+
+            .password{
+                box-sizing: border-box;
+                border-color: rgb(0, 0, 0, 0.2);
+                border-radius: 5px;
+                border-width: 1px;
+                padding: 15px;
+                font-size: 16px;
+                margin-top: 12px;
+                width: 367px;
+            }
+
+            .password:focus{
+                border-color: #1877F2;
+                outline: none;
+            }
+
+            .loginbutton{
+                border-color: rgb(0, 0, 0,0.2);
+                border-radius: 5px;
+                border-width: 1px;
+                padding-left: 153px;
+                padding-right: 153px;
+                padding-top: 11px;
+                padding-bottom: 11px;
+                font-size: 16px;
+                background-color: #0866FF;
+                color: white;
+                font-size: 20px;
+                margin-top: 16px;
+                margin-bottom: 15px;
+                transition: 0.1s;
+            }
+
+            .loginbutton:hover{
+                background-color: #1877F2;
+                cursor: pointer;
+            }
+
+            .forgotpassword{
+                font-size: 14px;
+                font-family: Helvetica, Arial, sans-serif;
+                color: #1877F2;
+                text-decoration: none;
+                transition: 1s;
+            }
+
+            .forgotpassword:hover{
+                text-decoration:underline;
+            }
+
+            hr{
+                width: 360px;
+                border-color:  #dadde1;
+                opacity: 0.3;
+            }
+
+            .createbutton{
+                border-color: rgb(0, 0, 0,0.2);
+                border-radius: 5px;
+                border-width: 1px;
+                padding-left: 15px;
+                padding-right: 15px;
+                padding-top: 12px;
+                padding-bottom: 12px;
+                background-color: #42B72A;
+                color: white;
+                font-size: 17px;
+                margin-top: 0;   
+                transition: 0.1s;
+            }
+
+            .createbutton:hover{
+                background-color: #3d9b2a;  
+                cursor: pointer;
+            }
+
+            .container2{
+                margin-top: 30px;
+                margin-left: 44px;
+            }   
+
+            .createpage{
+                color: #1C1E21;
+                text-decoration: none;
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                transition: 1s;
+            }
+
+            .createpage:hover{
+                text-decoration: underline;
+            }
+
+            .celebrity{
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                display: inline;
+            }
+
+            ul{
+                list-style: none;
+            }
+
+            .lang{
+                display: inline;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 12px;
+                padding-left: 10px;
+            }
+
+            a{
+                color: #8A8D91;
+                text-decoration: none;
+            }
+
+            a:hover{
+                text-decoration: underline;
+            }
+
+            .plus-button{
+                height: 21px;
+            }
+
+            li{
+                display: inline;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 12px;
+                padding-left: 20px;
+            }
+
+            .hr2{
+                width: 1080px;
+                border-color:  #dadde1;
+                opacity: 0.3;
+            }
+
+            .footer{
+                color: #737373;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 11px;
+            }
+
+            .languages{
+                margin: 0;
+                margin-top: 23px;
+            }
+
+            .first-nav{
+                margin: 0;
+            }
+
+            .second-nav{
+                margin: 0;
+            }
+
+            .third-nav {
+                margin: 0;
+            }
+
+            .maincon{
+                position: relative;
+                left: 940px;
+            }
+
+            .fblogo{
+                position: relative;
+                top: 225px;
+                left: 365px;
+            }
+
+            .navigation{
+                width: 1200px;
+                position: relative;
+                left: 400px;
+            }
+
+            .core{
+                width: 980px;
+                height: 496px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                margin-left: 100px;
+                margin-right: 100px;
+                position: relative;
+                bottom: 60px;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <div class="head">
+            <div class="core">
+                <div class="fblogo">
+                    <img class="facebooklogo" src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" alt="Facebook Logo">
+                    <h2 class="fb-qoute">Connect with friends and the world <br/> around you on Facebook.</h2>
+                </div>
+        
+                <div class="maincon">
+                    <div class="container">
+                        <form class="loginform" action="#">
+                            <input class="email" type="text" placeholder="Email or phone number" required/> <br/>
+                            <input class="password" type="password" placeholder="Password" required/> <br/>
+                            <button class="loginbutton" type="submit"> <b> Log In </b> </button> <br/>
+                            <a class="forgotpassword" href="#"> Forgot password? </a> <br/>
+                            <br>
+                            <hr/>
+                            <br>
+                            <a href="#"> <button class="createbutton" type="button"> <b> Create new account </b> </button> </a>
+                        </form>
+                    </div>
+                    <div class="container2">
+                        <a class="createpage" href="#"> <b> Create a Page </b> </a> 
+                        <p class="celebrity">for a celebrity, brand or business. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <ul class="languages">
+                <li><a href="#" title="English (US)">English (US)</a></li>
+                <li class="lang"><a href="#" title="Filipino">Filipino</a></li>
+                <li class="lang"><a href="#" title="Cebuano">Bisaya</a></li>
+                <li class="lang"><a href="#" title="Spanish">Español</a></li>
+                <li class="lang"><a href="#" title="Japanese">日本語</a></li>
+                <li class="lang"><a href="#" title="Korean">한국어</a></li>
+                <li class="lang"><a href="#" title="Simplified Chinese (China)">中文(简体)</a></li>
+                <li class="lang"><a href="#" title="Arabic">العربية</a></li>
+                <li class="lang"><a href="#" title="Português (Brazil)">Português (Brasil)</a></li>
+                <li class="lang"><a href="#" title="French (France)">Français (France)</a></li>
+                <li class="lang"><a href="#" title="German">Deutsch</a></li>
+                <li class="lang"><button class="plus-button" title="Show more languages"><img src="https://e7.pngegg.com/pngimages/369/878/png-clipart-computer-icons-plus-sign-plus-sign-rectangle-grey.png" width="15px" height="15px" alt="plus-sign"></button></li>
+            </ul>
+
+            <hr class="hr2">
+
+            <ul class="first-nav">
+                <li><a href="#" title="Sign Up for Facebook">Sign Up</a></li>
+                <li><a href="#" title="Log into Facebook">Log In</a></li>
+                <li><a href="#" title="Check out Messenger">Messenger</a></li>
+                <li><a href="#" title="Facebook Lite for Android">Facebook Lite</a></li>
+                <li><a href="#" title="Browse in Video">Video</a></li>
+                <li><a href="#" title="Check out popular places on Facebook">Places</a></li>
+                <li><a href="#" title="Check out Facebook games">Games</a></li>
+                <li><a href="#" title="Buy and sell on Facebook Marketplace">Marketplace</a></li>
+                <li><a href="#" title="Learn more about Meta Pay">Meta Pay</a></li>
+                <li><a href="#" title="Check out Meta">Meta Store</a></li>
+                <li><a href="#" title="Learn more about Meta Quest">Meta Quest</a></li>
+                <li><a href="#" title="Imagine with Meta AI">Imagine with Meta AI</a></li>
+                <li><a href="#" title="Check out Instagram">Instagram</a></li>
+            </ul>
+
+            <ul class="second-nav">
+                <li><a href="#" title="Check out Threads">Threads</a></li>
+                <li><a href="#" title="Donate to worthy causes">Fundraisers</a></li>
+                <li><a href="#" title="Browse our Facebook Services directory">Services</a></li>
+                <li><a href="#" title="See the Voting Information Center">Voting Information Center</a></li>
+                <li><a href="#" title="Learn how we collect, use and share information to support Facebook">Privacy Policy</a></li>
+                <li><a href="#" title="Learn how to manage and control your privacy on Facebook">Privacy Center</a></li>
+                <li><a href="#" title="Explore our Groups">Groups</a></li>
+                <li><a href="#" title="Read our blog, discover the resource center, and find job opportunities">About</a></li>
+                <li><a href="#" title="Advertise on Facebook">Create ad</a></li>
+                <li><a href="#" title="Create a page">Create Page</a></li>
+                <li><a href="#" title="Develop on our platform">Developers</a></li>
+                <li><a href="#" title="Make your next career move to our awesome company">Careers</a></li>
+            </ul>
+
+            <ul class="third-nav">
+                <li><a href="#" title="Learn about cookies and Facebook">Cookies</a></li>
+                <li><a href="#" title="Learn about Ad Choices">Ad choices <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmbTADf_1jgRkZSrbzgEECRqFONSGijF-g3gDILp9gnA&s" alt="ad-choices-logo" width="12px" height="12px"></a></li>
+                <li><a href="#" title="Review our terms and policies">Terms</a></li>
+                <li><a href="#" title="Visit our Help Center">Help</a></li>
+                <li><a href="#" title="Visit our Contact Uploading & Non-Users Notice">Contact Uploading & Non-Users</a></li>
+            </ul>
+
+            <ul class="footer-container">
+                <li><span class="footer">Meta © 2024</span></li> 
+             </ul>
+
+        </div>
+    </body>
+</html>
